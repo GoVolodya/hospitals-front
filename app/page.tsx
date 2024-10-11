@@ -1,14 +1,15 @@
 'use client';
 
-import { Provider } from 'react-redux';
-import { store } from './store';
-import { HospitalList } from './components/HospitalList';
 import React from 'react';
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <Provider store={store}>
-      <HospitalList />
-    </Provider>
+    <>
+      <h1 className="title">Hello, you are on the main page please visit click link below</h1>
+      <Link href="/hospitals" className="link">
+        Go to Hospitals Page
+      </Link>
+    </>
   );
 }
