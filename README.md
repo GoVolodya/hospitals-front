@@ -11,6 +11,12 @@ Then, install dependencies:
 npm install
 ```
 
+Then, create a .env file:
+
+```bash
+cp .env.example .env.local
+```
+
 After that, run the development server:
 
 ```bash
